@@ -1,6 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+import { Metadata } from "next";
+
+//  You should not manually add <head> tags such as <title> and <meta> to root layouts. Instead, you should use the Metadata API
+export const metadata: Metadata = {
+    title: 'title for index page',
+}
+
 export default function Home() {
   return (
     <main className={styles.main}>
